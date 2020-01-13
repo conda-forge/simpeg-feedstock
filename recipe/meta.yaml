@@ -1,4 +1,4 @@
-{% set version = "0.12.0" %}
+{% set version = "0.13.0" %}
 
 package:
   name: simpeg
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/S/SimPEG/SimPEG-{{ version }}.tar.gz
-  sha256: 5736d8b338747a0da59deabf26c80effb349dd7cfc802e13a87326e90b87950c
+  sha256: 0d12d350f8f23bd849aba84ddb82ff6d39976f042c3a427c691eb2b1072d95b5
 
 build:
   number: 0
