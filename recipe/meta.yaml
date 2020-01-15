@@ -9,7 +9,7 @@ source:
   sha256: 5736d8b338747a0da59deabf26c80effb349dd7cfc802e13a87326e90b87950c
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
@@ -70,3 +70,4 @@ extra:
   recipe-maintainers:
     - lheagy
     - jcapriot
+    - thast
