@@ -57,8 +57,8 @@ test:
     - SimPEG.potential_fields
     - SimPEG.potential_fields.gravity
     - SimPEG.potential_fields.magnetics
-    - SimPEG.seis
-    - SimPEG.seis.straight_ray_tomography
+    - SimPEG.seismic
+    - SimPEG.seismic.straight_ray_tomography
     - SimPEG.utils
     - SimPEG.utils.drivers
     - SimPEG.regularization
