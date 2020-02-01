@@ -118,4 +118,5 @@ Feedstock Maintainers
 
 * [@jcapriot](https://github.com/jcapriot/)
 * [@lheagy](https://github.com/lheagy/)
+* [@thast](https://github.com/thast/)
 
