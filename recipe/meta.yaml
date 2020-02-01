@@ -21,6 +21,7 @@ requirements:
     - python
     - numpy >=1.7
     - scipy >=0.13
+    - cython
     - discretize >=0.4.0
     - geoana >=0.0.4
     - ipython
