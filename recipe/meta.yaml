@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/S/SimPEG/SimPEG-{{ version }}.tar.gz
-  sha256: 63d6b17ac1c30fb63b1c2d70f9822aac8801183b39a4dac77d58795480adfcf2
+  sha256: ae9f29196a4a873c8790d15c175c095487917942eda15afe833be134c5733033
 
 build:
   number: 0
