@@ -19,44 +19,42 @@ requirements:
     - pip
   run:
     - python
-    - cython
+    - numpy >=1.7
+    - scipy >=0.13
+    - pymatsolver >=0.1.1
+    - matplotlib-base
+    - properties >=0.5.2
+    - vectormath >=0.2.0
     - discretize >=0.4.0
     - geoana >=0.0.4
-    - ipython
-    - matplotlib-base
-    - numpy >=1.7
-    - properties >=0.5.2
-    - pymatsolver >=0.1.1
-    - scipy >=0.13
-    - vectormath >=0.2.0
+    - empymod
+    - pandas
 
 test:
   imports:
     - SimPEG
-    - SimPEG.DC
-    - SimPEG.EM
-    - SimPEG.EM.Analytics
-    - SimPEG.EM.FDEM
-    - SimPEG.EM.NSEM
-    - SimPEG.EM.NSEM.Utils
-    - SimPEG.EM.Static
-    - SimPEG.EM.Static.DC
-    - SimPEG.EM.Static.IP
-    - SimPEG.EM.Static.SIP
-    - SimPEG.EM.Static.SP
-    - SimPEG.EM.Static.Utils
-    - SimPEG.EM.TDEM
-    - SimPEG.EM.Utils
-    - SimPEG.FLOW
-    - SimPEG.FLOW.Richards
-    - SimPEG.IP
-    - SimPEG.NSEM
-    - SimPEG.PF
-    - SimPEG.SEIS
-    - SimPEG.SEIS.StraightRay
-    - SimPEG.SIP
-    - SimPEG.Utils
-    - SimPEG.VRM
+    - SimPEG.electromagnetics
+    - SimPEG.electromagnetics.analytics
+    - SimPEG.electromagnetics.frequency_domain
+    - SimPEG.electromagnetics.natural_source
+    - SimPEG.electromagnetics.natural_source.utils
+    - SimPEG.electromagnetics.static
+    - SimPEG.electromagnetics.static.resistivity
+    - SimPEG.electromagnetics.static.induced_polarization
+    - SimPEG.electromagnetics.static.spectral_induced_polarization
+    - SimPEG.electromagnetics.static.utils
+    - SimPEG.electromagnetics.time_domain
+    - SimPEG.electromagnetics.utils
+    - SimPEG.electromagnetics.viscous_remanent_magnetization
+    - SimPEG.flow
+    - SimPEG.flow.richards
+    - SimPEG.potential_fields
+    - SimPEG.potential_fields.gravity
+    - SimPEG.potential_fields.magnetics
+    - SimPEG.seismic
+    - SimPEG.seismic.straight_ray_tomography
+    - SimPEG.utils
+    - SimPEG.utils.drivers
     - SimPEG.regularization
 
 about:
