@@ -1,4 +1,4 @@
-{% set version = "0.13.1" %}
+{% set version = "0.14.0" %}
 
 package:
   name: simpeg
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/S/SimPEG/SimPEG-{{ version }}.tar.gz
-  sha256: 63d6b17ac1c30fb63b1c2d70f9822aac8801183b39a4dac77d58795480adfcf2
+  sha256: 28df374f57b3a8910ddf0270909adfedcc8e23034c93a5fb42d4b16a6a00e927
 
 build:
-  number: 2
+  number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -64,7 +64,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "SimPEG: Simulation and Parameter Estimation in Geophysics"
+  summary: 'SimPEG: Simulation and Parameter Estimation in Geophysics'
 
 extra:
   recipe-maintainers:
