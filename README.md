@@ -5,7 +5,7 @@ Home: http://simpeg.xyz/
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: SimPEG: Simulation and Parameter Estimation in Geophysics
 
