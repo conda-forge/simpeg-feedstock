@@ -9,7 +9,7 @@ source:
   sha256: cc4cca2e382ed3fd1e309a8fd38e950d5840aa0dec261233c686d2527f11be05
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -26,7 +26,7 @@ requirements:
     - matplotlib-base
     - properties >=0.5.2
     - vectormath >=0.2.0
-    - discretize >=0.7.0
+    - discretize >=0.7.1
     - geoana >=0.0.4
     - empymod
     - pandas
