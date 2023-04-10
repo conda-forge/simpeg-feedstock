@@ -1,11 +1,11 @@
-About simpeg
-============
+About simpeg-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/simpeg-feedstock/blob/main/LICENSE.txt)
 
 Home: http://simpeg.xyz/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/simpeg-feedstock/blob/main/LICENSE.txt)
 
 Summary: SimPEG: Simulation and Parameter Estimation in Geophysics
 
