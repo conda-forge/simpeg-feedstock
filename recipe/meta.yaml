@@ -15,18 +15,18 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
   run:
-    - python >=3.7
-    - numpy >=1.7
-    - scipy >=1.0.0
-    - scikit-learn >=0.22
-    - pymatsolver >=0.1.1
+    - python >=3.8
+    - numpy >=1.20
+    - scipy >=1.8
+    - scikit-learn >=1.2
+    - pymatsolver >=0.2
     - matplotlib-base
-    - discretize >=0.7.1
+    - discretize >=0.8
     - geoana >=0.4.0
-    - empymod
+    - empymod >=2.0.0
     - pandas
     - utm
 
@@ -56,6 +56,7 @@ test:
     - SimPEG.utils
     - SimPEG.utils.drivers
     - SimPEG.regularization
+    - SimPEG.meta
 
 about:
   home: http://simpeg.xyz/
@@ -68,4 +69,3 @@ extra:
   recipe-maintainers:
     - lheagy
     - jcapriot
-    - thast
