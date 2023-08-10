@@ -1,4 +1,4 @@
-{% set version = "0.19.0" %}
+{% set version = "0.20.0" %}
 
 package:
   name: simpeg
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/S/SimPEG/SimPEG-{{ version }}.tar.gz
-  sha256: 54f095ed7bdd782466c852df5fcb0c708575def64072d00305571323e02ec645
+  sha256: 9798031b19c0be04f84a974f66a9595c560d903e2d90bf5587fe3a7c138e1e32
 
 build:
   number: 0
@@ -17,6 +17,7 @@ requirements:
   host:
     - python >=3.8
     - pip
+    - setuptools_scm
   run:
     - python >=3.8
     - numpy >=1.20
@@ -25,10 +26,9 @@ requirements:
     - pymatsolver >=0.2
     - matplotlib-base
     - discretize >=0.8
-    - geoana >=0.4.0
+    - geoana >=0.5.0
     - empymod >=2.0.0
     - pandas
-    - utm
 
 test:
   imports:
