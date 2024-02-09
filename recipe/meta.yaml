@@ -9,7 +9,7 @@ source:
   sha256: 9798031b19c0be04f84a974f66a9595c560d903e2d90bf5587fe3a7c138e1e32
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -23,7 +23,7 @@ requirements:
     - numpy >=1.20
     - scipy >=1.8
     - scikit-learn >=1.2
-    - pymatsolver >=0.2
+    - pymatsolver-base >=0.2
     - matplotlib-base
     - discretize >=0.8
     - geoana >=0.5.0
