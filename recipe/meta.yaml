@@ -29,6 +29,9 @@ requirements:
     - geoana >=0.5.0
     - empymod >=2.0.0
     - pandas
+  run_constrained:
+    - choclo >=0.1.0
+    - fsspec >=0.3.3
 
 test:
   imports:
