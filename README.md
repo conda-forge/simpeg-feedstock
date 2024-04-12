@@ -145,5 +145,5 @@ Feedstock Maintainers
 
 * [@jcapriot](https://github.com/jcapriot/)
 * [@lheagy](https://github.com/lheagy/)
-* [@santisoler](https://github.com/santisoler)
+* [@santisoler](https://github.com/santisoler/)
 
