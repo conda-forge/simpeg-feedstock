@@ -35,31 +35,31 @@ requirements:
 
 test:
   imports:
-    - SimPEG
-    - SimPEG.electromagnetics
-    - SimPEG.electromagnetics.analytics
-    - SimPEG.electromagnetics.frequency_domain
-    - SimPEG.electromagnetics.natural_source
-    - SimPEG.electromagnetics.natural_source.utils
-    - SimPEG.electromagnetics.static
-    - SimPEG.electromagnetics.static.resistivity
-    - SimPEG.electromagnetics.static.induced_polarization
-    - SimPEG.electromagnetics.static.spectral_induced_polarization
-    - SimPEG.electromagnetics.static.utils
-    - SimPEG.electromagnetics.time_domain
-    - SimPEG.electromagnetics.utils
-    - SimPEG.electromagnetics.viscous_remanent_magnetization
-    - SimPEG.flow
-    - SimPEG.flow.richards
-    - SimPEG.potential_fields
-    - SimPEG.potential_fields.gravity
-    - SimPEG.potential_fields.magnetics
-    - SimPEG.seismic
-    - SimPEG.seismic.straight_ray_tomography
-    - SimPEG.utils
-    - SimPEG.utils.drivers
-    - SimPEG.regularization
-    - SimPEG.meta
+    - simpeg
+    - simpeg.electromagnetics
+    - simpeg.electromagnetics.analytics
+    - simpeg.electromagnetics.frequency_domain
+    - simpeg.electromagnetics.natural_source
+    - simpeg.electromagnetics.natural_source.utils
+    - simpeg.electromagnetics.static
+    - simpeg.electromagnetics.static.resistivity
+    - simpeg.electromagnetics.static.induced_polarization
+    - simpeg.electromagnetics.static.spectral_induced_polarization
+    - simpeg.electromagnetics.static.utils
+    - simpeg.electromagnetics.time_domain
+    - simpeg.electromagnetics.utils
+    - simpeg.electromagnetics.viscous_remanent_magnetization
+    - simpeg.flow
+    - simpeg.flow.richards
+    - simpeg.potential_fields
+    - simpeg.potential_fields.gravity
+    - simpeg.potential_fields.magnetics
+    - simpeg.seismic
+    - simpeg.seismic.straight_ray_tomography
+    - simpeg.utils
+    - simpeg.utils.drivers
+    - simpeg.regularization
+    - simpeg.meta
 
 about:
   home: http://simpeg.xyz/
