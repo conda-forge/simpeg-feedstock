@@ -1,4 +1,4 @@
-{% set version = "0.22.1" %}
+{% set version = "0.22.2" %}
 
 package:
   name: simpeg
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/S/SimPEG/simpeg-{{ version }}.tar.gz
-  sha256: 84cf056c79e2b60cbe034bbd9710b1409d00c12dca488f3d990582eb4d40230a
+  sha256: 7127399f5d1362fae9e31d4c55ab70a614238f5f7899b54003cfdba5ac23fa06
 
 build:
   number: 0
@@ -17,7 +17,8 @@ requirements:
   host:
     - python >=3.8
     - pip
-    - setuptools_scm
+    - setuptools >=64
+    - setuptools_scm >=8
   run:
     - python >=3.8
     - numpy >=1.20
