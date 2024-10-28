@@ -9,7 +9,7 @@ source:
   sha256: 7127399f5d1362fae9e31d4c55ab70a614238f5f7899b54003cfdba5ac23fa06
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -21,7 +21,7 @@ requirements:
     - setuptools_scm >=8
   run:
     - python >=3.8
-    - numpy >=1.20
+    - numpy >=1.20,<2
     - scipy >=1.8
     - scikit-learn >=1.2
     - pymatsolver >=0.2
