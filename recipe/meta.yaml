@@ -1,38 +1,37 @@
-{% set version = "0.22.2" %}
+{% set version = "0.23.0" %}
 
 package:
   name: simpeg
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/S/SimPEG/simpeg-{{ version }}.tar.gz
-  sha256: 7127399f5d1362fae9e31d4c55ab70a614238f5f7899b54003cfdba5ac23fa06
+  url: https://pypi.org/packages/source/S/SimPEG/simpeg-{{ version }}.tar.gz
+  sha256: cad79bd3c2ee75c9491158b18004f436b6fc0dc29aa33df81f060cd2e367b466
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.10
     - pip
     - setuptools >=64
     - setuptools_scm >=8
   run:
-    - python >=3.8
-    - numpy >=1.20,<2
+    - python >=3.10
+    - numpy >=1.22
     - scipy >=1.8
-    - scikit-learn >=1.2
-    - pymatsolver >=0.2
+    - pymatsolver >=0.3
     - matplotlib-base
-    - discretize >=0.10
-    - geoana >=0.5.0
-    - empymod >=2.0.0
-    - pandas
+    - discretize >=0.11
+    - geoana >=0.7.0
+    - libdlf
   run_constrained:
-    - choclo >=0.1.0
+    - choclo >=0.3.0
     - fsspec >=0.3.3
+    - scikit-learn >=1.2
 
 test:
   imports:
