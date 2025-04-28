@@ -29,7 +29,7 @@ requirements:
     - discretize >=0.11
     - geoana >=0.7.0
     - libdlf
-    - typing_extensions # [py < 313]
+    - typing_extensions
 
   run_constrained:
     - choclo >=0.3.0
