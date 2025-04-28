@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set version = "0.23.0" %}
 
 package:
@@ -9,18 +10,18 @@ source:
   sha256: cad79bd3c2ee75c9491158b18004f436b6fc0dc29aa33df81f060cd2e367b466
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - pip
     - setuptools >=64
     - setuptools_scm >=8
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - numpy >=1.22
     - scipy >=1.8
     - pymatsolver >=0.3
@@ -34,6 +35,8 @@ requirements:
     - scikit-learn >=1.2
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - simpeg
     - simpeg.electromagnetics
