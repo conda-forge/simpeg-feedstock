@@ -29,6 +29,8 @@ requirements:
     - discretize >=0.11
     - geoana >=0.7.0
     - libdlf
+    - typing_extensions # [py < 313]
+
   run_constrained:
     - choclo >=0.3.0
     - fsspec >=0.3.3
