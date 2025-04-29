@@ -1,5 +1,5 @@
 {% set python_min = '3.10' %}
-{% set version = "0.23.0" %}
+{% set version = "0.24.0" %}
 
 package:
   name: simpeg
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/S/SimPEG/simpeg-{{ version }}.tar.gz
-  sha256: cad79bd3c2ee75c9491158b18004f436b6fc0dc29aa33df81f060cd2e367b466
+  sha256: 420dc4b4684a4c0092ff605b2a56d6884335585d3bedd51430875e0024deebf3
 
 build:
   number: 1
@@ -29,6 +29,8 @@ requirements:
     - discretize >=0.11
     - geoana >=0.7.0
     - libdlf
+    - typing_extensions
+
   run_constrained:
     - choclo >=0.3.0
     - fsspec >=0.3.3
