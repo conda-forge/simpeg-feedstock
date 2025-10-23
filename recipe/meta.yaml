@@ -1,5 +1,5 @@
-{% set python_min = '3.10' %}
-{% set version = "0.24.0" %}
+{% set python_min = "3.10" %}
+{% set version = "0.25.0" %}
 
 package:
   name: simpeg
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/S/SimPEG/simpeg-{{ version }}.tar.gz
-  sha256: 420dc4b4684a4c0092ff605b2a56d6884335585d3bedd51430875e0024deebf3
+  sha256: a5320c76608869177ab323a37780c455c6389dbbdfbdc0770cd30bc91b3eff7f
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
