@@ -1,4 +1,4 @@
-{% set python_min = "3.10" %}
+{% set python_min = "3.11" %}
 {% set version = "0.25.0" %}
 
 package:
@@ -23,10 +23,10 @@ requirements:
   run:
     - python >={{ python_min }}
     - numpy >=1.22
-    - scipy >=1.8
-    - pymatsolver >=0.3
+    - scipy >=1.12
+    - pymatsolver >=0.4
     - matplotlib-base
-    - discretize >=0.11
+    - discretize >=0.12
     - geoana >=0.7.0
     - libdlf
     - typing_extensions
