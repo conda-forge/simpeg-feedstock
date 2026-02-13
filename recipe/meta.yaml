@@ -27,7 +27,7 @@ requirements:
     - pymatsolver >=0.4
     - matplotlib-base
     - discretize >=0.12
-    - geoana >=0.7.0
+    - geoana >=0.8.1
     - libdlf
     - typing_extensions
 
