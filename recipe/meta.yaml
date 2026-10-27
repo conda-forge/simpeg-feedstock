@@ -1,13 +1,13 @@
 {% set python_min = "3.11" %}
-{% set version = "0.25.2" %}
+{% set version = "0.26.0" %}
 
 package:
   name: simpeg
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/S/SimPEG/simpeg-{{ version }}.tar.gz
-  sha256: feeb106f70bf093ecd6b531dad49cc179d11c5e69dbff0c64f9c3cf8b5e2eb97
+  url: https://files.pythonhosted.org/packages/source/S/SimPEG/simpeg-{{ version }}.tar.gz
+  sha256: 5b089c6bc15b17a00a1470541c750b162e7235ce7e241fcf5627ffa12f5c6137
 
 build:
   number: 0
