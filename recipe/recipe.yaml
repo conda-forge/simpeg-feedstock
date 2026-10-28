@@ -1,0 +1,83 @@
+schema_version: 1
+
+context:
+  python_min: "3.12"
+  version: "0.26.0"
+
+package:
+  name: simpeg
+  version: ${{ version }}
+
+source:
+  url: https://files.pythonhosted.org/packages/source/S/SimPEG/simpeg-${{ version }}.tar.gz
+  sha256: 5b089c6bc15b17a00a1470541c750b162e7235ce7e241fcf5627ffa12f5c6137
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - pip
+    - setuptools >=64
+    - setuptools-scm >=8
+  run:
+    - python >=${{ python_min }}
+    - numpy >=1.22
+    - scipy >=1.12
+    - pymatsolver >=0.4
+    - matplotlib-base
+    - discretize >=0.12
+    - geoana >=0.8.1
+    - libdlf
+    - typing_extensions
+  run_constraints:
+    - choclo >=0.3.0
+    - fsspec >=0.3.3
+    - scikit-learn >=1.2
+
+tests:
+  - python:
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+      imports:
+      - simpeg
+      - simpeg.electromagnetics
+      - simpeg.electromagnetics.analytics
+      - simpeg.electromagnetics.frequency_domain
+      - simpeg.electromagnetics.natural_source
+      - simpeg.electromagnetics.natural_source.utils
+      - simpeg.electromagnetics.static
+      - simpeg.electromagnetics.static.resistivity
+      - simpeg.electromagnetics.static.induced_polarization
+      - simpeg.electromagnetics.static.spectral_induced_polarization
+      - simpeg.electromagnetics.static.utils
+      - simpeg.electromagnetics.time_domain
+      - simpeg.electromagnetics.utils
+      - simpeg.electromagnetics.viscous_remanent_magnetization
+      - simpeg.flow
+      - simpeg.flow.richards
+      - simpeg.potential_fields
+      - simpeg.potential_fields.gravity
+      - simpeg.potential_fields.magnetics
+      - simpeg.seismic
+      - simpeg.seismic.straight_ray_tomography
+      - simpeg.utils
+      - simpeg.utils.drivers
+      - simpeg.regularization
+      - simpeg.meta
+
+about:
+  homepage: http://simpeg.xyz/
+  license: MIT
+  license_file: LICENSE
+  summary: "SimPEG: Simulation and Parameter Estimation in Geophysics"
+
+extra:
+  recipe-maintainers:
+    - lheagy
+    - jcapriot
+    - santisoler
